@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #333333; /* Dark gray font */
+	background-color: #F5F5F5; /* Light gray background */
+}
+
+h1{
+	text-align:center;
+}
+
+#contactInfo{
+	text-align:center;
+}
+
+.skill-group-name{
+  text-decoration: underline;
+}
+
+.skills-container{
+  display: flex;
+  justify-content: space-around; /*Use Justified Content*/
+}
+
+.technical-skills{
+  flex-basis: 25%;
+}
+
+.soft-skills{
+  flex-basis: 25%;
+}
+
+.language-skills{
+  flex-basis: 25%;
+}
+
+.gap{
+  padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .technical-skills, soft-skills, language-skills {
+    width: 100%; /* Make each item take up full width */
+  }
+}
+
